@@ -1,0 +1,59 @@
+{
+    "name": "react-electron-boilerplate",
+    "productName": "react-electron-boilerplate",
+    "version": "1.0.0",
+    "description": "A React + Electron boilerplate",
+    "main": "src/main.js",
+    "scripts": {
+        "react:noopen": "BROWSER=none react-scripts start --no-open",
+        "start": "electron-forge start",
+        "dev": "concurrently \"npm run react:noopen\" \"npm run start\"",
+        "package": "electron-forge package",
+        "make": "electron-forge make",
+        "publish": "electron-forge publish"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.26.0",
+        "@babel/preset-env": "^7.26.0",
+        "@babel/preset-react": "^7.25.9",
+        "@electron-forge/cli": "^7.5.0",
+        "@electron-forge/maker-deb": "^7.5.0",
+        "@electron-forge/maker-rpm": "^7.5.0",
+        "@electron-forge/maker-squirrel": "^7.5.0",
+        "@electron-forge/maker-zip": "^7.5.0",
+        "@electron-forge/plugin-auto-unpack-natives": "^7.5.0",
+        "@electron-forge/plugin-fuses": "^7.5.0",
+        "@electron/fuses": "^1.8.0",
+        "babel-loader": "^9.2.1",
+        "concurrently": "^9.1.0",
+        "electron": "33.2.0",
+        "react-scripts": "^5.0.1"
+    },
+    "keywords": [],
+    "author": {
+        "name": "Enviction",
+        "email": "schmidtjonas662@gmail.com"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "electron-squirrel-startup": "^1.0.1",
+        "marked": "^15.0.0",
+        "path-browserify": "^1.0.1",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-router-dom": "^6.28.0",
+        "react-switch": "^7.0.0"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}
