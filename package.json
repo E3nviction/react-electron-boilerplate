@@ -1,8 +1,8 @@
 {
-    "name": "envui",
-    "productName": "envui",
+    "name": "react-electron-boilerplate",
+    "productName": "react-electron-boilerplate",
     "version": "1.0.0",
-    "description": "A Macos styled UI Framework for Electron",
+    "description": "A React + Electron boilerplate",
     "main": "src/main.js",
     "scripts": {
         "react:noopen": "BROWSER=none react-scripts start --no-open",
